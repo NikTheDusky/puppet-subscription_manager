@@ -33,7 +33,7 @@ available_cases = {
     Service Type:
     Subscription Type:   Standard
     Ends:                02/28/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
     ',
     expected: ['402881af5354120801535494568c0003'],
   },
@@ -55,7 +55,7 @@ available_cases = {
     Service Type:
     Subscription Type:   Standard
     Ends:                02/28/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 
     Subscription Name:   CentOS 7
     Provides:            CentOS 7
@@ -71,7 +71,7 @@ available_cases = {
     Status Details:      Subscription is current
     Subscription Type:   Standard
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 ',
     expected: ['402881af5354120801535494568c0003',
                '402881af53cc3cc00153d85560d4001a'],

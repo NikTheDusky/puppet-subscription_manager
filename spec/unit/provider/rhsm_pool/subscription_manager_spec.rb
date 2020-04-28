@@ -33,7 +33,7 @@ Status Details:    expired
 Subscription Type: permanent
 Starts:            06/01/2015
 Ends:              05/24/38
-System Type:       Physical
+Entitlement Type:       Physical
 EOD
 
 title1 = '1a2b3c4d5e6f1234567890abcdef12345'

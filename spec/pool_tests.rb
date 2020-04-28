@@ -39,7 +39,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 
 
 ',
@@ -68,7 +68,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 
     Subscription Name:   Puppet
     Provides:
@@ -84,7 +84,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 ',
     expected: { enabled: ['402881af53cc3cc00153d85560d4001a',
                           '402881af5354120801535494568c0003'],
@@ -118,7 +118,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 
     Subscription Name:   Puppet
     Provides:
@@ -134,7 +134,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 ',
     expected: { disabled: ['402881af5354120801535494568c0003'],
                 enabled: ['402881af53cc3cc00153d85560d4001a'] },
@@ -161,7 +161,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 
     Subscription Name:   Puppet
     Provides:
@@ -177,7 +177,7 @@ consumed_cases = {
     Subscription Type:   Standard
     Starts:              04/02/2016
     Ends:                03/26/2046
-    System Type:         Physical
+    Entitlement Type:         Physical
 ',
     expected: { enabled: [],
                 disabled: ['402881af53cc3cc00153d85560d4001a',
