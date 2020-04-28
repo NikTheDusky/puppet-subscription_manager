@@ -46,7 +46,7 @@ Puppet::Type.type(:rhsm_pool).provide(:subscription_manager) do
     keys =
       'Subscription Name|Provides|SKU|Contract|Account|Serial|Pool ID|Active' \
       '|Quantity Used|Service Level|Service Type|Status Details' \
-      '|Subscription Type|Starts|Ends|System Type'
+      '|Subscription Type|Starts|Ends|Entitlement Type'
     subscription_manager('list', '--consumed').each_line do |line|
       m = %r{^\s*Subscription Name:\s*([^:]+)$}.match(line)
       unless m.nil?
@@ -90,7 +90,7 @@ Puppet::Type.type(:rhsm_pool).provide(:subscription_manager) do
         subscription.store(:active, value)
         next
       end
-      m = %r{^\s*System Type:\s*([^:]+)$}.match(line)
+      m = %r{^\s*Entitlement Type:\s*([^:]+)$}.match(line)
       unless m.nil?
         value = m[1].strip.to_sym
         subscription.store(:system_type, value)
